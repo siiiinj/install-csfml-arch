@@ -13,7 +13,7 @@ pacman -S --noconfirm base-devel git cmake
 # Cloner le référentiel CSFML depuis GitHub
 git clone https://github.com/SFML/CSFML.git
 cd CSFML
-
+git checkout 2.5
 # Créer un répertoire build et s'y déplacer
 mkdir build
 cd build
