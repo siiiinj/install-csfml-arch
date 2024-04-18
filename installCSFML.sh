@@ -8,7 +8,7 @@ fi
 
 # Mettre à jour les dépôts et installer les outils nécessaires
 pacman -Syu --noconfirm
-pacman -S --noconfirm base-devel git cmake
+pacman -S --noconfirm base-devel git cmake sfml
 
 # Cloner le référentiel CSFML depuis GitHub
 git clone https://github.com/SFML/CSFML.git
@@ -27,7 +27,7 @@ make install
 cd ../..
 rm -rf CSFML
 
-echo "export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib" >> ~/.zshrc
+echo "ajoutez: export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib dans votre zshrc ou bashrc"
 
 echo "CSFML a été installé avec succès sur votre système Arch Linux."
 
